@@ -52,9 +52,6 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 nest_asyncio.apply()
 
 
-
-
-
 BOT_TOKEN = os.getenv("BOT_TOKEN", "").strip()
 BOT_USERNAME = "CryptoZenthflowbot"
 BOT_NAME = "Crypto ZenthFlow | استعلام ارز دیجیتال"
@@ -80,9 +77,6 @@ logging.basicConfig(
     level=logging.INFO,
 )
 logger = logging.getLogger("CryptoZenthFlowBot")
-
-
-
 
 
 EMOJIS = {
@@ -136,9 +130,6 @@ EMOJIS = {
     "pin": "📌",
     "heart": "❤️",
 }
-
-
-
 
 
 PERSIAN_DIGITS_MAP = str.maketrans(
@@ -3930,7 +3921,6 @@ def main():
 
     print(f"🚀 @{BOT_USERNAME} is now polling and ready to serve!")
     application.run_polling(allowed_updates=Update.ALL_TYPES, drop_pending_updates=True)
-
 
 if __name__ == "__main__":
     try:
